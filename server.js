@@ -28,7 +28,7 @@ app.get('/', (req, res)=> {
 		if(user.length){
 			res.json(user);
 		} else {
-			res.status(400).json('Not Found');
+			res.status(400).json('No Users found');
 		}
 	})
 });
